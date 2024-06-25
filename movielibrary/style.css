@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#output{
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    
+}
+.card{
+    padding: 30px;
+    border-radius: 30px;
+    height: 350px;
+    width: 300px;
+    background-color:hwb(0 90% 9%);
+    margin: 10px;
+    text-align: center;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+}
+#url{
+      padding: 10px;
+      border-radius: 5px;
+      margin: 40px;
+}
+#title{
+        padding: 10px;
+        border-radius: 5px;
+        margin: 40px;
+}
+#price{
+        padding: 10px;
+        border-radius: 5px;
+        margin: 40px;
+}
+#btn{
+    padding:10px;
+    border-radius: 5px;
+    margin: 40px;
+}
