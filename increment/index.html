@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+       *{
+        box-sizing: border-box;
+        background-color: rgb(101, 79, 198);
+       } 
+
+      body{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+       #pc{
+        height: 400px;
+        width: 400px;
+        background-color: white;
+        position: relative;
+        border-radius: 10px;
+        margin:auto;
+    }
+    #count{
+        text-align: center;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: white;
+    }
+    button{
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(173, 205, 233);
+    }
+    #count{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 40px;
+    }
+    #evenorodd{
+        background-color: white;
+        font-size: 30px;
+        color:red;
+    }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <div id="pc">
+    <p id="evenorodd"></p>
+    <p id="count"> </p> 
+    <button id="dec">Decrement</button>
+    <button id="reset">Reset</button>
+    <button id="inc">Increment</button> 
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>

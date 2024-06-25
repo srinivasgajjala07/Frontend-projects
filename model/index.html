@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Modal Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+</head>
+<body>
+  <!-- Button trigger modal -->
+   <div id="bt">
+  <button type="button;" class="btn btn-dark p-4" data-toggle="modal" data-target="#exampleModalCenter" onclick="change2()">
+    Launch demo modal
+  </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle" ><h1 id="head" class="animate__animated" style="position: relative;left:130px;">WELCOME</h1></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div id="accordin">
+                <div class="accordin-item" onclick="change2()">
+                    <div class="heading">what is HTML?</div>
+                    <div class="para hide">
+                    <ul style="text-align: left;">
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    
+                    <li>HTML elements tell the browser how to display the content</li>
+                </ul>
+                </div>
+                </div>
+                <div class="accordin-item" onclick="change2()">
+                    <div class="heading">what is CSS?</div>
+                    <div class="para hide">
+                        <ul style="text-align: left;">
+                            
+                            <li>CSS stands for Cascading Style Sheets</li>
+                            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                            <li>External stylesheets are stored in CSS files</li>
+                            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="accordin-item" onclick="change2()">
+                    <div class="heading">what is JS?</div>
+                    <div class="para hide">
+                        <ul style="text-align: left;">
+    
+                        <li >JavaScript is the Programming Language for the Web.</li>
+                        <li>JavaScript can update and change both HTML and CSS.</li>
+                        <li>JavaScript can calculate, manipulate and validate data.</li>
+                      </ul>
+                    </div>
+                </div>
+                <div>
+                  <p id="evenodd"></p>
+                  <p id="para"></p>
+                  <button id="bt2">--</button>
+                  
+                  <button id="bt3">Reset</button>
+                  
+                  <button id="bt4">++</button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

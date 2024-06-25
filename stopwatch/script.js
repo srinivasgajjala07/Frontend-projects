@@ -11,6 +11,8 @@ function start()
            timer=setInterval(update,10);
            isworking=true;
         }
+       
+
 }
 function stop()
 {    if(isworking)
@@ -18,6 +20,7 @@ function stop()
         clearInterval(timer);
         isworking=flase;
     }
+    
      
 }
 function reset()

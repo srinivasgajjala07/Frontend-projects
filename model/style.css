@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+.accordin-item{
+    border:1px solid black
+}
+.heading{
+    background-color:aqua;
+    color:black;
+}
+.hide{
+    display: none;
+}
+.heading:hover {
+    cursor: pointer;
+}
+.modal-dialog {
+    max-height:150vh;
+
+    /* Adjust the max-width according to your preference */
+ }
+ body{
+    
+    text-align: center;
+    
+}
+#bt{
+  
+   margin-top: 345px;
+}
+
+ .heading{
+    padding: 10px;
+ }
+ .model-header h1{
+    
+    text-align: center;
+ }
+ #bt2{
+    background-color: aqua;
+    border-radius: 5px;
+    width: 70px;
+ }
+ #bt3{
+   
+    border-radius: 5px;
+    background-color: aqua;
+    width: 70px;
+ }
+ #bt4{
+   
+    border-radius: 5px;
+    background-color: aqua;
+    width: 70px;
+ }
+ #evenodd{
+    margin-top: 10px;
+    color:red;
+ }
+
+ 
