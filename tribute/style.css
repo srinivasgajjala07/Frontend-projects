@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#name{text-align: center;
+       
+}
+img{
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border-color: black salmon;
+    max-width: 80%;
+    height:900px;
+    border: 0.1px solid rgb(233, 225, 225);
+    
+}
+body{
+    background-color: white;
+    line-height:1.3;
+}
+p{
+    text-align: justify;
+
+}
+.container{
+    
+    display: flex;
+    height: auto;
+    align-items: center;
+    align-items: flex-start;
+    margin-right: 30px;
+    padding: 20px;
+    margin-left: 30px;
+}
+h1, h2, p {
+    margin-bottom: 10px;
+    
+     /* Add spacing between elements */
+}
+.content{
+    flex: 1;
+}
+a{
+    text-decoration: none;
+    color:rgb(208, 18, 167) ;
+}
+pre{
+    margin-left: 0%;
+    color: blueviolet;
+}
+h1{
+    color: rgb(201, 20, 161)
+    ;
+}
+h2{
+    color:rgb(238, 106, 106);
+}
+p{
+    color:rgb(63, 116, 185);
+}
+hr{
+    height: 2px solid black;
+
+}
+#tribute{
+    text-align: center;
+    color: rgb(78, 78, 63);}
