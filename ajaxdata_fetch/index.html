@@ -2,33 +2,38 @@
 <html>
 <head>
     <title>Fetch Data Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+            text-align: justify;
+            line-height: 2rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<style>
-    *{
-        box-sizing: border-box;
-        text-align: center;
-        text-align: justify;
-        line-height: 2rem;
-    }
-</style>
 <body>
 
-    <h1>All About fetching text file data into browser by using js</h1><br><br>
+    <h1>All About Fetching Text File Data into Browser Using JavaScript</h1><br><br>
 
     <div id="result"></div>
-    <button onclick="fetchData()">Fetch Data(text file)</button>
+    <button onclick="fetchData()">Fetch Data (text file)</button>
 
     <script>
         function fetchData() {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById('result').innerHTML = this.responseText;
-                }
-            };
-            // Replace 'http://example.com/example.txt' with the URL of the file accessible from other systems
-            xhttp.open('GET','http://127.0.0.1:3000/example.txt', true);
-            xhttp.send();
+            fetch('http://127.0.0.1:3000/ajaxdata_fetch/example.txt')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('result').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
         }
     </script>
 </body>
