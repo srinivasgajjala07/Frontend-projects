@@ -14,7 +14,7 @@ body {
 }
 
 .hero_section {
-  height:73vh;
+  height:85vh;
  
   background-color: #000;
   display: flex;
@@ -155,7 +155,7 @@ button:hover{
   background-color:#D756D7;
   margin: 10px;
   position: relative;
-  left: 150px;
+  left: 80px;
   border-radius: 5px;
   text-align: left;
   background-position: center;
