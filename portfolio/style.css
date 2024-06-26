@@ -33,7 +33,7 @@ body {
 }
 .hero_section div{
   position: relative;
-  left: -370px;
+  left: -270px;
   height: 85px;
 
   margin-bottom: 5px;
@@ -215,7 +215,7 @@ button:hover{
 .map{
   position: relative;
   top: -353px;
-  left: 1020px;
+  left: 830px;
   border:2px solid black;
   width: 405px;
   margin-bottom: -15%;
