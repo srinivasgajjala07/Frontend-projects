@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 1px;
+}
+#myh1{
+   background-color: rgb(211, 30, 205);
+   width: 200px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+}
+#myh1:hover{
+    background-color:hsl(72, 68%, 47%);
+    
+}
+h1{
+   text-align: center;   
+}
