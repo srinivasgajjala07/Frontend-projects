@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Text to Speech Conversion</h1>
+    <div>
+        <input type="text" placeholder="Enter text ...." id="ip">
+        <button onclick="speak()" id="btn">speak</button>
+    </div>
+    <p id="para">hii</p>
+    <script>
+        function speak(){ 
+            
+            var text=document.getElementById('ip').value;
+            var utterance=new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(utterance);   
+        }
+    </script>
+</body>
+</html>
